@@ -6,6 +6,7 @@ import { NumericFormat } from 'react-number-format';
 import { toast } from 'react-toastify';
 import jwtDecode from 'jwt-decode';
 import { JWTPayloadTypes, UserTypes } from '@/services/models';
+import Image from 'next/image';
 
 interface DetailEventProps {
     data: {
@@ -72,7 +73,7 @@ export default function DetailEvent(props: DetailEventProps) {
                             <div className="row align-items-center">
                                 <div className="col-md-12 col-4">
                                    
-                                    <img src={`${API_IMG}/${data.img_url}`} width="280" height="380" className="img-fluid" alt=""/>
+                                    <Image src={`${API_IMG}/${data.img_url}`} width="280" height="380" className="img-fluid" alt=""/>
                                 </div>
                                 <div className="col-md-12 col-8 d-md-none d-block">
                                     <h2 className="text-xl fw-bold color-palette-1 text-start mb-10">{data.nama_acara}</h2>z

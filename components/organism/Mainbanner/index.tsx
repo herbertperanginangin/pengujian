@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function MainBanner() {
@@ -19,17 +20,17 @@ export default function MainBanner() {
                             className="d-md-block d-none"/> Mahasiswa mengembangkan pengetahuan dan keahliannya
                     </p>
                     <div className="d-flex flex-lg-row flex-column gap-4">
-                        <a className="btn btn-get text-lg text-white rounded-pill" href="/sign-up" role="button">Ayo Mulai</a>
+                        <Link className="btn btn-get text-lg text-white rounded-pill" href="/sign-up" role="button">Ayo Mulai</Link>
                         
                     </div>
                 </div>
                 <div className="col-lg-6 col-12 d-lg-block d-none">
                     <div className="d-flex justify-content-lg-end justify-content-center me-lg-5">
                         <div className="position-relative" data-aos="zoom-in">
-                            <img src="/img/Header-1.png" className="img-fluid" alt=""/>
+                            <Image src="/img/Header-1.png" className="img-fluid" alt="" width={340} height={340}/>
                             <div className="card left-card position-absolute border-0">
                                 <div className="d-flex align-items-center mb-16 gap-3">
-                                    <img src="/img/Header-2.png" width="40" height="40" className="rounded-pill"
+                                    <Image src="/img/Header-2.png" width="40" height="40" className="rounded-pill"
                                         alt=""/>
                                     <div>
                                         <p className="text-sm fw-medium color-palette-1 m-0">Shayna Anne</p>
@@ -47,7 +48,7 @@ export default function MainBanner() {
                             </div>
                             <div className="card right-card position-absolute border-0">
                                 <div className="position-relative d-flex flex-row justify-content-center mb-24">
-                                    <img src="/img/Header-3.png" className="rounded-pill" alt=""/>
+                                    <Image src="/img/Header-3.png" width={50} height={50} className="rounded-pill" alt=""/>
                                     <p className="right-card-support text-white text-xxs text-center position-absolute m-0">
                                         New</p>
                                 </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 
@@ -13,7 +14,7 @@ export default function EventItem(props : EventItemProps) {
             <div className="featured-game-card position-relative">
                 <Link href={`/detail/${id}`} >
                         <div className="blur-sharp">
-                            <img src={img_url} width="205" height="270" alt=""/>
+                            <Image src={img_url} width="205" height="270" alt=""/>
                         </div>
                         <div className="cover position-absolute bottom-0 m-32">
                             <div className="d-flex flex-column h-100 justify-content-between text-decoration-none">

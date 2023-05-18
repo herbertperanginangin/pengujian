@@ -1,5 +1,6 @@
 import SignInForm from '@/components/organism/SignInForm'
 import React from 'react'
+import Image from 'next/image'
 
 export default function SignIn() {
   return (
@@ -35,7 +36,7 @@ export default function SignIn() {
                   </div>
                   
             <div className="col-xxl-7 col-lg-6 bg-blue text-center pt-lg-145 pb-lg-145 d-lg-block d-none">
-                <img src ="/img/Header-9.png" width="502" height="391.21" className="img-fluid pb-50" alt=""/>
+                <Image  src ="/img/Header-9.png" width={502} height="391" className="img-fluid pb-50" alt=""/>
                 <h2 className="text-4xl fw-bold text-white mb-30">Follow The Process.<br/>
                     Be the Champion.</h2>
                 <p className="text-white m-0">Kami menyediakan berbagai macam kegiatan <br/> membantu mahasiswa mengembangkan <br/>
