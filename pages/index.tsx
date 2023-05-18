@@ -7,6 +7,8 @@ import Event from '@/components/organism/event'
 import Footer from '@/components/organism/footer'
 
 const inter = Inter({ subsets: ['latin'] })
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
   useEffect(() => {

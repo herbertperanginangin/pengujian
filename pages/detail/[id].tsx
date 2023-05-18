@@ -9,7 +9,11 @@ export default function Detail() {
   const { query, isReady } = useRouter();
   const [dataItem,setDataItem ] = useState({
     nama_acara: '',
-    tanggal_acara : ''
+    tanggal_acara: '',
+    harga: '',
+    deskripsi: '',
+    img_url: '',
+    id: ''
   })
 
   const getEventDetailApi = useCallback(async (id: any) => {
